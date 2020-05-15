@@ -116,9 +116,33 @@ Content-Type: application/json
 ################################################## Config Server #######################################################
 ########################################################################################################################
 
+#################################################################### api-gateway
+### Get config file of api-gateway.
+GET http://localhost:8888/zuul-server.yaml
+
+#################################################################### discovery-server
+### Get config file of discovery-server.
+GET http://localhost:8888/discovery-server.yaml
+
 #################################################################### microservice-a
 ### Get config file of microservice-a.
 GET http://localhost:8888/microservice-a.yaml
+
+#################################################################### microservice-b
+### Get config file of microservice-b.
+GET http://localhost:8888/microservice-b.yaml
+
+#################################################################### microservice-c
+### Get config file of microservice-c.
+GET http://localhost:8888/microservice-c.yaml
+
+#################################################################### microservice-d
+### Get config file of microservice-d.
+GET http://localhost:8888/microservice-d.yaml
+
+#################################################################### microservice-e
+### Get config file of microservice-e.
+GET http://localhost:8888/microservice-e.yaml
 
 
 ########################################################################################################################
