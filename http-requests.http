@@ -1,0 +1,21 @@
+########################################################################################################################
+################################################## author-service ######################################################
+########################################################################################################################
+
+################################################################### get
+### Dirrect call microservice-a.
+GET  http://localhost:8081/author/1
+Content-Type: application/json
+
+### Calling microservice-a via API-Gateway.
+GET  http://localhost:8100/author-service/author/1
+Content-Type: application/json
+
+################################################################### getAll
+### Dirrect call microservice-a.
+GET  http://localhost:8081/author
+Content-Type: application/json
+
+### Calling microservice-a via API-Gateway.
+GET  http://localhost:8100/author-service/author
+Content-Type: application/json
