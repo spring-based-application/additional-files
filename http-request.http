@@ -99,16 +99,16 @@ Content-Type: application/json
 
 
 ########################################################################################################################
-########################################### callNonExistentMicroservice ################################################
+################################################## checkFullback #######################################################
 ########################################################################################################################
 
 #################################################################### microservice-a
 ### Dirrect call microservice-a.
-GET  http://localhost:8081/app/callNonExistentMicroservice
+GET  http://localhost:8081/app/checkFullback
 Content-Type: application/json
 
 ### Calling microservice-a via API-Gateway.
-GET  http://localhost:8100/microservice-a/app/callNonExistentMicroservice
+GET  http://localhost:8100/microservice-a/app/checkFullback
 Content-Type: application/json
 
 
